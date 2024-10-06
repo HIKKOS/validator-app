@@ -37,7 +37,7 @@ class CustomInput extends StatelessWidget {
           decoration: InputDecoration(
             floatingLabelBehavior: FloatingLabelBehavior.never,
             hintText: hintText,
-            prefixIcon: Icon(iconData),
+            prefixIcon: iconData != null ? Icon(iconData) : null,
           ));
     } else {
       body = Column(
@@ -58,7 +58,7 @@ class CustomInput extends StatelessWidget {
               decoration: InputDecoration(
                 floatingLabelBehavior: FloatingLabelBehavior.never,
                 hintText: hintText,
-                prefixIcon: Icon(iconData),
+                prefixIcon: iconData != null ? Icon(iconData) : null,
               )),
         ],
       );

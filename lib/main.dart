@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:forms_validation/themes/app_themes.dart';
 import 'package:forms_validation/views/home.view.dart';
 
 void main() => runApp(const MyApp());
@@ -8,9 +9,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Material App',
-      home: HomeView(),
+      theme: AppTheme.lightTheme,
+      home: const HomeView(),
     );
   }
 }
